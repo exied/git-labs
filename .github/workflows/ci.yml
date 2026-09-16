@@ -9,3 +9,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Проверка проекта
         run: echo "Сборка и тесты выполнены успешно"
+      - name: Тест с ошибкой
+        run: exit 1
